@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Data Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <div class="floating-box">
+      <div class="foreground">
+        <form id="form">
+          <div class="get-value">
+            <input type="text" name="key" />
+            <button type="submit" name="get">GET VALUE</button>
+            <p name="result"></p>
+            <p name="message"></p>
+            <p class="error" name="error"></p>
+          </div>
+
+          <div class="submit-data">
+            <input type="text" name="data" />
+            <button type="submit" name="post">SAVE VALUE</button>
+          </div>
+        </form>
+      </div>
+      <div class="background"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="dist/js/circus-api.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>
